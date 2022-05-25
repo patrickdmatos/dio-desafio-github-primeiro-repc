@@ -1,4 +1,5 @@
 # Repositorio do desafio de projeto sobre Git e Github da DIO
+
 ### Desafio sobre git e github do Bootcamp dio **TQI** 👨‍💻
 
 #### **Links Utéis**
@@ -11,3 +12,4 @@ todos os comandos tem como sufixo **git**
  - commit -> "commita" as informações do stage
  - push -> envia os commits para o github
  - clone -> copia um repositorio do github em uma pasta local na maquina
+ - ssh-keygen -> comando utilizado para criar uma chave ssh
