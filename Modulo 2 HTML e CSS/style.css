@@ -2,6 +2,8 @@ body{
     background: #f7f7f7;
     font-family: Verdana;
     font: #505050;
+    max-width: 900px;
+    margin: auto;
 }
 
 #title , .subtitle, .posttitle {
@@ -10,6 +12,11 @@ color: aqua;
 #title{
     font-size: 40px;
     text-transform: uppercase;
+}
+#img{
+    border-radius: 100%;
+    border-color: #000;
+    border-style: double;
 }
 a{
     text-decoration: line-through;
@@ -33,4 +40,8 @@ a{
 }
 .contact_list li a{
     text-decoration: none;
+}
+.postimg{
+    margin-bottom: 15px;
+    width: 100%;
 }
