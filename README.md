@@ -9,6 +9,7 @@
 todos os comandos tem como sufixo **git**
  - init -> inicia o git em uma pasta local
  - add -> adiciona a versão do aqruivo/pasta ao stage
+ - status -> exibe os status atual do stage
  - commit -> "commita" as informações do stage
  - push -> envia os commits para o github
  - clone -> copia um repositorio do github em uma pasta local na maquina
