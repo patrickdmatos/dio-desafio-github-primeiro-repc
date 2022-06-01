@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Teko:wght@300&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    color: azure;
+    font-family: 'amatic sc', 'Teko', verdana;
+}
+.header-wrapper{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(-45deg, #155c96c7,#6e98b9b0,#c1936b,#EBB78A);
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: bganimation 8s ease-in-out infinite;
+}
+h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.social-media{
+    margin-top: 1rem;
+    display: flex;
+    font-style: bold;
+}
+.social-media a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding:  1rem 4rem;
+    border: 1px solid white;
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s cubic-bezier(0.55, 0.25, 0.675, 0.97);
+}
+a:hover{
+    color: #155c96c7;
+    background-color: white;
+}
+@keyframes bganimation{
+    0%{
+        background-position: 0% 70%;
+    }
+    50%{
+        background-position: 70% 100%;
+    }
+    100%{
+        background-position: 0% 90%;
+    }
+}
