@@ -7,7 +7,7 @@ body{
     font-family: 'amatic sc', 'Teko', verdana;
 }
 /*header*/
-.header-wrapper{
+.rapper{
     height: 100vh;
     width: 100%;
     background: linear-gradient(-45deg, #155c96c7,#6e98b9b0,#c1936b,#EBB78A);
@@ -108,13 +108,13 @@ transform: rotate(0);
     position: absolute;
     top: 28px;
     right: 30px;
-    background: red;
+    background: transparent;
     height: 40px;
     width: 40px;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 0px white;
     z-index: -1;
-    transition: 400ms ease-in-out 0;
+    transition: 2s ease-in-out 0;
 }
 .menu-itens{
     position: fixed;
@@ -128,7 +128,7 @@ transform: rotate(0);
     z-index: 2;
     opacity: 0;
     visibility: hidden;
-    transition: 400ms ease-in-out 0;
+    transition: 2s ease-in-out 0;
 }
 .menu-itens ul{
     list-style: none;
@@ -167,12 +167,82 @@ transform: rotate(0);
 }
 #toggle:checked + .checkbox{
     background-color: white;
+    border-radius: 50%;
 }
 #toggle:checked ~ .menu{
     box-shadow: 0px 0px 0px 100vmax white;
+    border-radius: 50%;
     z-index: 1;
 }
 #toggle:checked ~ .menu-itens{
     visibility: visible;
     opacity: 1;
+}
+/* cards */
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.card{
+    height: 300px;
+    width: 400px;
+    margin: 3rem;
+    background-image: url(./pcard.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    filter: grayscale(0.53);
+}
+.card-tex{
+    width: 40%;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: rgb(109, 109, 109);
+}
+.card-wrapper{
+    content: '';
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 1px solid white;
+    opacity: 0;
+    transition: 0.4s;
+}
+.card-wrapper h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.3s;
+}
+.card-wrapper p{
+    font-size: 0;
+    text-transform: uppercase;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    margin: 0;
+    transition: 0.3s;
+}
+.card:hover > .card-wrapper:before{
+    opacity:1;
+    width: 350px;
+    height: 250px;
 }
