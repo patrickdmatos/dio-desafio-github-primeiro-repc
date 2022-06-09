@@ -4,7 +4,7 @@ body{
     font-family: 'Shadows Into Light', cursive;
     align-items: center;
     justify-content: center;
-    background-color: #F1948A;
+    background-color: #fac3bd;
     padding: 0;
     margin-top: 160px;
     display: block;
@@ -15,8 +15,9 @@ h1{
     letter-spacing: 1px;
 }
 #add{
-    background-color: #CB5346;
-    border: 0px;
+    color: #a02c1f;
+    background-color: #eb9a91;
+    border: 1px solid #a02c1f;
     border-radius: 50px;
     font-size: 15px;
 }
@@ -24,11 +25,12 @@ h1{
     font-size: 24px;
     text-align: center;
 }
-#toggle:checked ~ .lista{
+#description:checked ~ .lista{
     text-decoration: line-through;
+    text-decoration-color: #a02c1f;
 }
 input[type="text"] {
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #a02c1f;
   }
